@@ -4,5 +4,7 @@
 <h2>Prénom : {{user.firstName}}</h2>
 <h3 id="age">Age : {{user.age}}</h3>
 <button (click)="hideAge()">Masquer l'age</button>
-<label for="quote">Citation : </label>
-<input name="quote" type="text" [value]="user.quote">
+<p>Citation :  {{user.quote}}</p>
+<label for="quote">Editer la citation : </label>
+<input type="text" name="quote" id="quote" [(ngModel)]="user.quote">
+

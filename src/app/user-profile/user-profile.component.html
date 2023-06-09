@@ -1,0 +1,8 @@
+<img src={{user.photo}} alt="">
+
+<h2>Nom : {{user.name}}</h2>
+<h2>Prénom : {{user.firstName}}</h2>
+<h3 id="age">Age : {{user.age}}</h3>
+<button (click)="hideAge()">Masquer l'age</button>
+<label for="quote">Citation : </label>
+<input name="quote" type="text" [value]="user.quote">

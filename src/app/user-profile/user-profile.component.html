@@ -1,10 +1,12 @@
-<img src={{user.photo}} alt="">
+<img src={{user1.photoURL}} alt="">
 
-<h2>Nom : {{user.name}}</h2>
-<h2>Prénom : {{user.firstName}}</h2>
-<h3 id="age">Age : {{user.age}}</h3>
-<button (click)="hideAge()">Masquer l'age</button>
-<p>Citation :  {{user.quote}}</p>
+<h2>Nom : {{user1.name}}</h2>
+<h2>Prénom : {{user1.firstName}}</h2>
+<h3 id="age">Age : {{user1.age}}</h3>
+<button (click)="user1.hideAge()">Masquer l'age</button>
+<p>Citation :  {{user1.quote}}</p>
 <label for="quote">Editer la citation : </label>
-<input type="text" name="quote" id="quote" [(ngModel)]="user.quote">
+<input type="text" name="quote" id="quote" [(ngModel)]="user1.quote">
+
+
 

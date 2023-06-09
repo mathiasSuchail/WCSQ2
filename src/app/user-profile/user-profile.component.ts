@@ -6,13 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.css'],
 })
 export class UserProfileComponent {
-  user = {
-    name: 'Doe',
-    firstName: 'John',
-    age: 25,
-    quote: '',
-    photo: 'https://randomuser.me/api/portraits/lego/2.jpg',
-  };
+  public user1 = new user(
+    'Doe',
+    'John',
+    25,
+    'Tout est bon dans le cochon',
+    'https://randomuser.me/api/portraits/lego/2.jpg'
+  );
+}
+
+class user {
+  constructor(
+    name: string,
+    firstName: string,
+    age: number,
+    quote: string,
+    photoURL: string
+  ) {
+    this.name = name;
+    this.firstName = firstName;
+    this.age = age;
+    this.quote = quote;
+    this.photoURL = photoURL;
+  }
+  public name: string;
+  public firstName: string;
+  public age: number;
+  public quote: string;
+  public photoURL: string;
+
   hideAge() {
     document.getElementById('age')?.classList.toggle('hidden');
   }

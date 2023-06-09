@@ -10,7 +10,7 @@ export class UserProfileComponent {
     name: 'Doe',
     firstName: 'John',
     age: 25,
-    quote: document.querySelector('#quote'),
+    quote: '',
     photo: 'https://randomuser.me/api/portraits/lego/2.jpg',
   };
   hideAge() {
